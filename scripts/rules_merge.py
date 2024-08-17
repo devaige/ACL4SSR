@@ -24,7 +24,21 @@ F_NAME_LINE = "Line.list"
 F_NAME_LINE_TV = "LineTV.list"
 F_NAME_NETFLIX = "Netflix.list"
 F_NAME_TIKTOK = "TikTok.list"
+F_NAME_REDDIT = "Reddit.list"
 F_NAME_GOOGLE = "Google.list"
+F_NAME_APPLE = "Apple.list"
+F_NAME_APPLE_MEDIA = "AppleMedia.list"
+F_NAME_FACEBOOK = "Facebook.list"
+F_NAME_MICROSOFT = "Microsoft.list"
+F_NAME_MICROSOFT_MEDIA = "MicrosoftMedia.list"
+F_NAME_HK_FASTEST = "HKFastest.list"
+F_NAME_HK_BALANCE = "HKBalance.list"
+F_NAME_JP_FASTEST = "JPFastest.list"
+F_NAME_JP_BALANCE = "JPBalance.list"
+F_NAME_SG_FASTEST = "SGFastest.list"
+F_NAME_SG_BALANCE = "SGBalance.list"
+F_NAME_TW_FASTEST = "TWFastest.list"
+F_NAME_TW_BALANCE = "TWBalance.list"
 F_NAME_REJECT = "Reject.list"
 F_NAME_DIRECT = "Direct.list"
 # 这里就顺便定义规则的顺序的，越是小众的规则集越靠前，越是重要的规则集越靠前
@@ -40,23 +54,20 @@ rules_file_names = {
     F_NAME_LINE_TV,
     F_NAME_NETFLIX,
     F_NAME_TIKTOK,
+    F_NAME_REDDIT,
     F_NAME_GOOGLE,
-    "Apple.list",  # Apple 相关的使用 Fastest 节点
-    "AppleMedia.list",  # Apple 媒体或存储相关的使用负载均衡节点
-    "Facebook.list",
-    "Microsoft.list",
-    "HKFastest.list",
-    "HKBalance.list",
-    "JPFastest.list",
-    "JPBalance.list",
-    "SGFastest.list",
-    "SGBalance.list",
-    "TWFastest.list",
-    "TWBalance.list",
-    "UKFastest.list",
-    "UkBalance.list",
-    "USFastest.list",
-    "USBalance.list",
+    F_NAME_APPLE,  # Apple 相关的使用 Fastest 节点
+    F_NAME_APPLE_MEDIA,  # Apple 媒体或存储相关的使用负载均衡节点
+    F_NAME_FACEBOOK,
+    F_NAME_MICROSOFT,
+    F_NAME_HK_FASTEST,
+    F_NAME_HK_BALANCE,
+    F_NAME_JP_FASTEST,
+    F_NAME_JP_BALANCE,
+    F_NAME_SG_FASTEST,
+    F_NAME_SG_BALANCE,
+    F_NAME_TW_FASTEST,
+    F_NAME_TW_BALANCE,
     F_NAME_DIRECT,  # 直连
     F_NAME_REJECT,  # 禁止
 }
@@ -81,6 +92,7 @@ for filepath in rules_list_file_paths:
     OUTPUT = None
     if filename.lower() == F_NAME_OPEN_AI.lower():
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_OPEN_AI)
+
     elif filename == F_NAME_TELEGRAM:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_TELEGRAM)
     elif filename == F_NAME_TWITTER:
@@ -91,12 +103,42 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_LINE_TV)
     elif filename == F_NAME_TIKTOK:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_TIKTOK)
+    elif filename == F_NAME_APPLE:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_APPLE)
+    elif filename == F_NAME_REDDIT:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_REDDIT)
+
     elif filename in (F_NAME_BINANCE, "Crypto.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_BINANCE)
     elif filename in (F_NAME_GITHUB, "Developer.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_GITHUB)
-    elif filename in ("Download.list", "UnBan.list"):# 不处理
+    elif filename in ("AppleNews.list", "AppleTV.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_APPLE_MEDIA)
+    elif filename in ("Facebook.list", "Instagram.list", "Whatsapp.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_FACEBOOK)
+    elif filename in ("Bing.list", "Microsoft.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_MICROSOFT)
+    elif filename in ("OneDrive.list", "Xbox.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_MICROSOFT_MEDIA)
+    elif filename in ("ProxyGFWlist.list", "ProxyLite.list", "Amazon.list", "AmazonIp.list", "Samsung.list", "Scholar.list", "Spark.list", "TopBlockedSites.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_HK_FASTEST)
+    elif filename in ("ProxyMedia.list", "ABC.list", "Adobe.list", "All4.list", "BBC.list", "BBCiPlayer.list", "Blizzard.list", "DAZN.list", "Deezer.list", "Discord.list", "DiscoveryPlus.list", "DisneyPlus.list", "EHGallery.list", "EncoreTVB.list", "Epic.list", "F1.list", "FoxNow.list", "GameDownload.list", "HBO_GO_HKG.list", "HBO.list", "Hulu.list", "HWTV.list", "ITV.list", "JOOX.list", "KakaoTalk.list", "KKBOX.list", "My5.list", "MyTVSuper.list", "Nintendo.list", "NivodTV.list", "Olevod.list", "Origin.list", "Pandora.list", "PBS.list", "Qobuz.list", "SoundCloud.list", "Spotify.list", "Steam.list", "SteamCN.list", "TIDAL.list", "Twitch.list", "ViuTV.list", "Zoom.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_HK_BALANCE)
+    elif filename in ("Dmm.list", "Sony.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_JP_FASTEST)
+    elif filename in ("AbemaTV.list", "Dubox.list", "HuluJapan.list", "Japonx.list", "Niconico.list", "Pixiv.list", "Porn.list", "Pornhub.list", "TeraBox.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_JP_BALANCE)
+    elif filename in ("VikACG.list", "Wikipedia.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_SG_FASTEST)
+    elif filename in ("AbemaTV.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_SG_BALANCE)
+    # elif filename in ("", ""):
+    #     OUTPUT = os.path.join(d_mine_tmp, F_NAME_TW_FASTEST)
+    elif filename in ("Bahamut.list", "BilibiliHMT.list", "IqiyiHMT.list", "KKTV.list", "TaiWanGood.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_TW_BALANCE)
+    elif filename in ("Download.list", "UnBan.list"):  # 不处理
         OUTPUT = None
+
     elif filename.startswith("Google"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_GOOGLE)
     elif filename.startswith("YouTube"):
@@ -105,10 +147,12 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_NETFLIX)
     elif filename.startswith("Claude"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_CLAUDE)
-    elif filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
+    elif filename.startswith("Ban") or filename == "PrivateTracker.list":  # 如果文件以 Ban 开头则表示是禁止规则
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_REJECT)
+
     else:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_DIRECT)
+
     if OUTPUT:
         with open(filepath, "r", encoding="UTF-8") as f:
             content = f.read()
