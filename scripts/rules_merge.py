@@ -14,19 +14,30 @@ os.makedirs(d_mine_tmp, exist_ok=True)
 
 # 定义输出文件名
 F_NAME_OPEN_AI = "OpenAI.list"
+F_NAME_CLAUDE = "Claude.list"
+F_NAME_TELEGRAM = "Telegram.list"
+F_NAME_TWITTER = "Twitter.list"
+F_NAME_YOUTUBE = "Youtube.list"
+F_NAME_BINANCE = "Binance.list"
+F_NAME_GITHUB = "Github.list"
+F_NAME_LINE = "Line.list"
+F_NAME_LINE_TV = "LineTV.list"
+F_NAME_NETFLIX = "Netflix.list"
+F_NAME_TIKTOK = "TikTok.list"
 F_NAME_REJECT = "Reject.list"
 # 这里就顺便定义规则的顺序的，越是小众的规则集越靠前，越是重要的规则集越靠前
 rules_file_names = {
     F_NAME_OPEN_AI,
-    "Claude.list",
-    "Telegram.list",
-    "Twitter.list",
-    "Youtube.list",
-    "Binance.list",
-    "Github.list",
-    "Line.list",
-    "Netflix.list",
-    "TikTok.list",
+    F_NAME_CLAUDE,
+    F_NAME_TELEGRAM,
+    F_NAME_TWITTER,
+    F_NAME_YOUTUBE,
+    F_NAME_BINANCE,
+    F_NAME_GITHUB,
+    F_NAME_LINE,
+    F_NAME_LINE_TV,
+    F_NAME_NETFLIX,
+    F_NAME_TIKTOK,
     "Google.list",
     "Apple.list",  # Apple 相关的使用 Fastest 节点
     "AppleMedia.list",  # Apple 媒体或存储相关的使用负载均衡节点
@@ -68,6 +79,26 @@ for filepath in rules_list_file_paths:
     OUTPUT = None
     if filename.lower() == F_NAME_OPEN_AI.lower():
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_OPEN_AI)
+    elif filename == F_NAME_TELEGRAM:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_TELEGRAM)
+    elif filename == F_NAME_TWITTER:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_TWITTER)
+    elif filename == F_NAME_LINE:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_LINE)
+    elif filename == F_NAME_LINE_TV:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_LINE_TV)
+    elif filename == F_NAME_NETFLIX:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_NETFLIX)
+    elif filename == F_NAME_TIKTOK:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_TIKTOK)
+    elif filename in (F_NAME_BINANCE, "Crypto.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_BINANCE)
+    elif filename in (F_NAME_GITHUB, "Developer.list"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_GITHUB)
+    elif filename.startswith("YouTube"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_YOUTUBE)
+    elif filename.startswith("Claude"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_CLAUDE)
     elif filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_REJECT)
     if OUTPUT:
