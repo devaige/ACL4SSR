@@ -1,7 +1,7 @@
 import os
 import shutil
 
-print('Starting script execution...')
+print("Starting script execution...")
 
 # 定义目录路径
 d_clash = "Clash"
@@ -55,31 +55,23 @@ for filename in rules_file_names:
 # 读取 Clash 和 Clash/Ruleset 目录下的 .list 文件
 rules_list_file_paths = []  # 预定义一个数据用于存储 list 文件的路径
 for rules_list_file_dirs in [d_clash, d_clash_ruleset]:
-    print(rules_list_file_dirs)
-    for dirpath, dirnames, filenames in os.walk(
-        rules_list_file_dirs
-    ):  # 遍历指定目录得到文件夹路径、文件夹名字、文件名的三元组
-        print(
-            "dirpath: {dirpath}, dirnames: {dirnames}, filenames: {filenames}".format(
-                dirpath=dirpath, dirnames=dirnames, filenames=filenames
-            )
-        )
-        for filename in filenames:  # 遍历文件名
-            if filename.endswith(".list"):  # 根据文件名判断文件是否所需
-                rules_list_file_paths.append(
-                    os.path.join(dirpath, filename)
-                )  # 将 list 文件路径存入数组
+    print(f"Searching list file in {rules_list_file_dirs}")
+    for filename in os.listdir(rules_list_file_dirs):
+        print(f"Found the list file {filename}")
+        filepath = os.path.join(rules_list_file_dirs, filename)
+        if os.path.isfile(filepath) and filename.endswith(".list"):
+            rules_list_file_paths.append(filepath)
 
 # 遍历 files 列表并分类写入 TMP 目录
 for filepath in rules_list_file_paths:
     filename = os.path.basename(filepath)  # 根据文件路径获取文件名
-    output = None
+    OUTPUT = None
     if filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
-        output_file = os.path.join(d_mine_tmp, F_NAME_REJECT)
-    if output:
-        with open(filepath, "r") as f:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_REJECT)
+    if OUTPUT:
+        with open(filepath, "r", encoding="UTF-8") as f:
             content = f.read()
-        with open(output, "a") as f:
+        with open(OUTPUT, "a", encoding="UTF-8") as f:
             f.write(content)
 
 # 自定义多行字符串常量规则
