@@ -1,6 +1,8 @@
 import os
 import shutil
 
+print('Starting script execution...')
+
 # 定义目录路径
 d_clash = "Clash"
 d_clash_ruleset = os.path.join(d_clash, "Ruleset")
@@ -53,7 +55,15 @@ for filename in rules_file_names:
 # 读取 Clash 和 Clash/Ruleset 目录下的 .list 文件
 rules_list_file_paths = []  # 预定义一个数据用于存储 list 文件的路径
 for rules_list_file_dirs in [d_clash, d_clash_ruleset]:
-    for dirpath, dirnames, filenames in os.walk(rules_list_file_dirs):  # 遍历指定目录得到文件夹路径、文件夹名字、文件名的三元组
+    print(rules_list_file_dirs)
+    for dirpath, dirnames, filenames in os.walk(
+        rules_list_file_dirs
+    ):  # 遍历指定目录得到文件夹路径、文件夹名字、文件名的三元组
+        print(
+            "dirpath: {dirpath}, dirnames: {dirnames}, filenames: {filenames}".format(
+                dirpath=dirpath, dirnames=dirnames, filenames=filenames
+            )
+        )
         for filename in filenames:  # 遍历文件名
             if filename.endswith(".list"):  # 根据文件名判断文件是否所需
                 rules_list_file_paths.append(
@@ -104,3 +114,4 @@ for filename in os.listdir(d_mine_tmp):
 
 # 删除 TMP 目录
 shutil.rmtree(d_mine_tmp)
+print("Script execution completed.")
