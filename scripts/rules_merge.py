@@ -52,10 +52,8 @@ for filename in rules_file_names:
 
 # 读取 Clash 和 Clash/Ruleset 目录下的 .list 文件
 rules_list_file_paths = []  # 预定义一个数据用于存储 list 文件的路径
-for dir in [d_clash, d_clash_ruleset]:
-    for dirpath, dirnames, filenames in os.walk(
-        dir
-    ):  # 遍历指定目录得到文件夹路径、文件夹名字、文件名的三元组
+for rules_list_file_dirs in [d_clash, d_clash_ruleset]:
+    for dirpath, dirnames, filenames in os.walk(rules_list_file_dirs):  # 遍历指定目录得到文件夹路径、文件夹名字、文件名的三元组
         for filename in filenames:  # 遍历文件名
             if filename.endswith(".list"):  # 根据文件名判断文件是否所需
                 rules_list_file_paths.append(
