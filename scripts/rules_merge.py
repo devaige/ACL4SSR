@@ -87,8 +87,6 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_LINE)
     elif filename == F_NAME_LINE_TV:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_LINE_TV)
-    elif filename == F_NAME_NETFLIX:
-        OUTPUT = os.path.join(d_mine_tmp, F_NAME_NETFLIX)
     elif filename == F_NAME_TIKTOK:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_TIKTOK)
     elif filename in (F_NAME_BINANCE, "Crypto.list"):
@@ -97,6 +95,8 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_GITHUB)
     elif filename.startswith("YouTube"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_YOUTUBE)
+    elif filename.startswith("Netflix"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_NETFLIX)
     elif filename.startswith("Claude"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_CLAUDE)
     elif filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
