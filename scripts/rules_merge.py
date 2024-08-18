@@ -24,7 +24,9 @@ F_NAME_LINE = "Line.list"
 F_NAME_LINE_TV = "LineTV.list"
 F_NAME_NETFLIX = "Netflix.list"
 F_NAME_TIKTOK = "TikTok.list"
+F_NAME_GOOGLE = "Google.list"
 F_NAME_REJECT = "Reject.list"
+F_NAME_DIRECT = "Direct.list"
 # 这里就顺便定义规则的顺序的，越是小众的规则集越靠前，越是重要的规则集越靠前
 rules_file_names = {
     F_NAME_OPEN_AI,
@@ -38,7 +40,7 @@ rules_file_names = {
     F_NAME_LINE_TV,
     F_NAME_NETFLIX,
     F_NAME_TIKTOK,
-    "Google.list",
+    F_NAME_GOOGLE,
     "Apple.list",  # Apple 相关的使用 Fastest 节点
     "AppleMedia.list",  # Apple 媒体或存储相关的使用负载均衡节点
     "Facebook.list",
@@ -55,7 +57,7 @@ rules_file_names = {
     "UkBalance.list",
     "USFastest.list",
     "USBalance.list",
-    "Direct.list",  # 直连
+    F_NAME_DIRECT,  # 直连
     F_NAME_REJECT,  # 禁止
 }
 
@@ -93,6 +95,10 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_BINANCE)
     elif filename in (F_NAME_GITHUB, "Developer.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_GITHUB)
+    elif filename in ("Download.list", "UnBan.list"):# 不处理
+        OUTPUT = None
+    elif filename.startswith("Google"):
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_GOOGLE)
     elif filename.startswith("YouTube"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_YOUTUBE)
     elif filename.startswith("Netflix"):
@@ -101,6 +107,8 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_CLAUDE)
     elif filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_REJECT)
+    else:
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_DIRECT)
     if OUTPUT:
         with open(filepath, "r", encoding="UTF-8") as f:
             content = f.read()
