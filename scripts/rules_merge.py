@@ -4,10 +4,10 @@ import shutil
 print("Starting script execution...")
 
 # 定义目录路径
-d_clash = "Clash"
-d_clash_ruleset = os.path.join(d_clash, "Ruleset")
-d_mine = "Mine"
-d_mine_tmp = os.path.join(d_mine, "TMP")
+D_CLASH = "Clash"
+d_clash_ruleset = os.path.join(D_CLASH, "Ruleset")
+D_MINE = "Mine"
+d_mine_tmp = os.path.join(D_MINE, "TMP")
 
 # 创建 TMP 目录
 os.makedirs(d_mine_tmp, exist_ok=True)
@@ -50,11 +50,11 @@ rules_file_names = {
 
 # 创建空的输出文件
 for filename in rules_file_names:
-    open(os.path.join(d_mine_tmp, filename), "w").close()
+    open(os.path.join(d_mine_tmp, filename), "w", encoding="UTF-8").close()
 
 # 读取 Clash 和 Clash/Ruleset 目录下的 .list 文件
 rules_list_file_paths = []  # 预定义一个数据用于存储 list 文件的路径
-for rules_list_file_dirs in [d_clash, d_clash_ruleset]:
+for rules_list_file_dirs in [D_CLASH, d_clash_ruleset]:
     print(f"Searching list file in {rules_list_file_dirs}")
     for filename in os.listdir(rules_list_file_dirs):
         print(f"Found the list file {filename}")
@@ -91,18 +91,18 @@ rules = {
 # 将自定义规则写入具体规则文件
 for filename, rules in rules.items():
     output_file = os.path.join(d_mine_tmp, filename)
-    with open(output_file, "a") as f:
+    with open(output_file, "a", encoding="UTF-8") as f:
         f.write("\n".join(rules) + "\n")
 
 # 删除 Mine 目录下的所有规则文件
-for filename in os.listdir(d_mine):
-    filepath = os.path.join(d_mine, filename)
+for filename in os.listdir(D_MINE):
+    filepath = os.path.join(D_MINE, filename)
     if os.path.isfile(filepath) and filename.endswith(".list"):
         os.remove(filepath)
 
 # 将 TMP 目录下的文件移动到 Mine 目录
 for filename in os.listdir(d_mine_tmp):
-    shutil.move(os.path.join(d_mine_tmp, filename), d_mine)
+    shutil.move(os.path.join(d_mine_tmp, filename), D_MINE)
 
 # 删除 TMP 目录
 shutil.rmtree(d_mine_tmp)
