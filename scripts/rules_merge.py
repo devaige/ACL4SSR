@@ -66,7 +66,9 @@ for rules_list_file_dirs in [D_CLASH, d_clash_ruleset]:
 for filepath in rules_list_file_paths:
     filename = os.path.basename(filepath)  # 根据文件路径获取文件名
     OUTPUT = None
-    if filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
+    if filename.lower() == F_NAME_OPEN_AI.lower():
+        OUTPUT = os.path.join(d_mine_tmp, F_NAME_OPEN_AI)
+    elif filename.startswith("Ban"):  # 如果文件以 Ban 开头则表示是禁止规则
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_REJECT)
     if OUTPUT:
         with open(filepath, "r", encoding="UTF-8") as f:
