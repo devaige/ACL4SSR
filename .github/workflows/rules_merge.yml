@@ -21,7 +21,7 @@ jobs:
         python-version: '3.x'
 
     - name: Run rules_merge.py script
-      run: python scripts/rules_merge.py
+      run: python scripts/rules_merge.py 
 
     - name: Commit and Push changes
       run: |
