@@ -47,8 +47,8 @@ rules_file_names = {
 }
 
 # 创建空的输出文件
-for file_name in rules_file_names:
-    open(os.path.join(d_mine_tmp, file_name), 'w').close()
+for filename in rules_file_names:
+    open(os.path.join(d_mine_tmp, filename), 'w').close()
 
 # 读取 Clash 和 Clash/Ruleset 目录下的 .list 文件
 rules_list_file_paths = []# 预定义一个数据用于存储 list 文件的路径
@@ -60,13 +60,13 @@ for dir in [d_clash, d_clash_ruleset]:
 
 # 遍历 files 列表并分类写入 TMP 目录
 for filepath in rules_list_file_paths:
-    file_name = os.path.basename(filepath)# 根据文件路径获取文件名
-    output_file = None
-    if file_name.startswith('Ban'):
+    filename = os.path.basename(filepath)# 根据文件路径获取文件名
+    output = None
+    if filename.startswith('Ban'):# 如果文件以 Ban 开头则表示是禁止规则
         output_file = os.path.join(d_mine_tmp, F_NAME_REJECT)
-    if output_file:
-        with open(file_path, 'r') as f: content = f.read()
-        with open(output_file, 'a') as f: f.write(content)
+    if output:
+        with open(filepath, 'r') as f: content = f.read()
+        with open(output, 'a') as f: f.write(content)
 
 # 自定义多行字符串常量规则
 custom_rules = {
