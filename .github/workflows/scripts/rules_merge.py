@@ -70,7 +70,7 @@ for filepath in rules_list_file_paths:
 
 # 自定义多行字符串常量规则
 custom_rules = {
-    "Reject.list": [
+    F_NAME_REJECT: [
         "# Custom Reject Rules",
         "DOMAIN-SUFFIX,example.com",
         "DOMAIN,another-example.com"
