@@ -75,7 +75,7 @@ for filepath in rules_list_file_paths:
             f.write(content)
 
 # 自定义多行字符串常量规则
-custom_rules = {
+rules = {
     F_NAME_REJECT: [
         "# Custom Reject Rules",
         "DOMAIN-SUFFIX,example.com",
@@ -89,20 +89,20 @@ custom_rules = {
 }
 
 # 将自定义规则写入具体规则文件
-for file_name, rules in custom_rules.items():
-    output_file = os.path.join(d_mine_tmp, file_name)
+for filename, rules in rules.items():
+    output_file = os.path.join(d_mine_tmp, filename)
     with open(output_file, "a") as f:
         f.write("\n".join(rules) + "\n")
 
 # 删除 Mine 目录下的所有规则文件
-for file_name in os.listdir(d_mine):
-    file_path = os.path.join(d_mine, file_name)
-    if os.path.isfile(file_path) and file_name.endswith(".list"):
-        os.remove(file_path)
+for filename in os.listdir(d_mine):
+    filepath = os.path.join(d_mine, filename)
+    if os.path.isfile(filepath) and filename.endswith(".list"):
+        os.remove(filepath)
 
 # 将 TMP 目录下的文件移动到 Mine 目录
-for file_name in os.listdir(d_mine_tmp):
-    shutil.move(os.path.join(d_mine_tmp, file_name), d_mine)
+for filename in os.listdir(d_mine_tmp):
+    shutil.move(os.path.join(d_mine_tmp, filename), d_mine)
 
 # 删除 TMP 目录
 shutil.rmtree(d_mine_tmp)
