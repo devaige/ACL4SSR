@@ -12,15 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Set up Node.js 20
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Merge rules
-      run: |
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Run rules_merge.py script
+      run: python scripts/rules_merge.py
         cd Clash
         find . -type f -name "Ban*.list" -exec cat {} + > ../Mine/Reject.list
         find . -type f -name "China*.list" -exec cat {} + > ../Mine/Direct.list
