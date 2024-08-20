@@ -17,12 +17,42 @@ jobs:
 
     - name: Merge rules
       run: |
-        cat Clash/ChinaCompanyIp.list Clash/ChinaDomain.list Clash/ChinaIp.list Clash/ChinaIpV6.list Clash/ChinaMedia.list Mine/Custom/Direct.list Clash/LocalAreaNetwork.list > Mine/Direct.list
-        cat Mine/Custom/Balance.list Clash/OneDrive.list > Mine/Balance.list
-        cat Clash/ProxyGFWlist.list Clash/ProxyLite.list Clash/ProxyMedia.list Mine/Custom/Fastest.list > Mine/Fastest.list
-        cat Clash/BanAD.list Clash/BanEasyList.list Clash/BanEasyListChina.list Clash/BanEasyPrivacy.list Clash/BanProgramAD.list > Mine/Reject.list
-        cat Clash/GoogleCN.list Mine/Custom/Google.list > Mine/Google.list
-        cat Clash/Microsoft.list > Mine/Microsoft.list
+        cd Clash
+        find . -type f -name "Ban*.list" -exec cat {} + > ../Mine/Reject.list
+        find . -type f -name "China*.list" -exec cat {} + > ../Mine/Direct.list
+        LocalAreaNetwork.list >> ../Mine/Direct.list
+        cat Telegram.list > ../Mine/Telegram.list
+        cat Netflix.list > ../Mine/Netflix.list
+        cat Apple.list > ../Mine/Apple.list
+        cat GoogleCN.list > ../Mine/Google.list
+        cat Bing.list Microsoft.list OneDrive.list Xbox.list > ../Mine/Microsoft.list
+        find . -type f -name "Proxy*.list" -exec cat {} + > ../Mine/HK.list
+        cd Ruleset
+        cat PrivateTracker.list >> ../../Mine/Reject.list
+        cat 58.list 360.list 4399.list AccelerateDirectSites.list Alibaba.list Baidu.list Bilibili.list ByteDance.list CCTV.list ChinaDNS.list ChinaNet.list ChinaOneKeyLogin.list CN.list DiDi.list Douyu.list HuaWei.list Iflytek.list Iqiyi.list JD.list Kingsoft.list Kuaishou.list LeTV.list Meitu.list MGTVTV.list MI.list MIUIPrivacy.list MOO.list NaSDDNS.list NetEase.list NetEaseMusic.list Origin.list Pandora.list PDD.list PPTVPPLive.list PublicDirectCDN.list RemoteDesktop.list Sina.list SohuSogo.list TapTap.list Tencent.list TencentLolm.list TencentVideo.list VikACG.list Vip.list Wechat.list Ximalaya.list Xunlei.list Youku.list YYeTs.list >> ../../Mine/Direct.list
+        cat Developer.list Github.list > ../../Mine/Github.list
+        cat OpenAi.list > ../../Mine/OpenAI.list
+        cat Claude.list ClaudeAI.list > ../../Mine/Claude.list
+        cat Telegram.list >> ../../Mine/Telegram.list
+        cat Twitter.list > ../../Mine/Twitter.list
+        cat YouTube.list YouTubeMusic.list > ../../Mine/YouTube.list
+        cat Line.list LineTV.list > ../../Mine/Line.list
+        cat Binance.list Crypto.list > ../../Mine/Binance.list
+        cat TikTok.list > ../../Mine/TikTok.list
+        cat Netflix.list NetflixIP.list >> ../../Mine/Netflix.list
+        cat Apple.list AppleNews.list AppleTV.list >> ../../Mine/Apple.list
+        cat Google.list GoogleCN.list GoogleCNProxyIP.list GoogleEarth.list GoogleFCM.list >> ../../Mine/Google.list
+        cat Bing.list Microsoft.list OneDrive.list Xbox.list >> ../../Mine/Microsoft.list
+        cat Facebook.list Instagram.list Whatsapp.list > ../../Mine/Facebook.list
+        cat Adobe.list Amazon.list AmazonIp.list Blizzard.list Discord.list DiscoveryPlus.list DisneyPlus.list EHGallery.list EncoreTVB.list Epic.list F1.list GameDownload.list HBO_GO_HKG.list Heytap.list Hulu.list HWTV.list JOOX.list Marketing.list MyTVSuper.list Nintendo.list NivodTV.list Olevod.list Sony.list Spark.list Spotify.list Steam.list SteamCN.list TeamViewer.list TopBlockedSites.list Twitch.list ViuTV.list Zoom.list >> ../../Mine/HK.list
+        cat AbemaTV.list Dmm.list Dubox.list HuluJapan.list Japonx.list Niconico.list Pixiv.list Porn.list Pornhub.list TeraBox.list > ../../Mine/JP.list
+        cat FoxNow.list HBO.list PBS.list > ../../Mine/US.list
+        cat Bahamut.list BilibiliHMT.list IqiyiHMT.list KKBOX.list KKTV.list LiTV.list TaiWanGood.list > ../../Mine/TW.list
+        cat KakaoTalk.list Reddit.list Samsung.list Scholar.list Wikipedia.list > ../../Mine/SG.list
+        cat ABC.list All4.list BBC.list BBCiPlayer.list DAZN.list Deezer.list ITV.list My5.list Qobuz.list SoundCloud.list TIDAL.list > ../../Mine/UK.list
+        cd ../../
+        cat Mine/Custom/Google.list >> Mine/Google.list
+        cat Mine/Custom/Direct.list >> Mine/Direct.list
 
     - name: Commit and Push changes
       run: |
