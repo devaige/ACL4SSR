@@ -20,7 +20,7 @@ jobs:
         cd Clash
         find . -type f -name "Ban*.list" -exec cat {} + > ../Mine/Reject.list
         find . -type f -name "China*.list" -exec cat {} + > ../Mine/Direct.list
-        LocalAreaNetwork.list >> ../Mine/Direct.list
+        cat LocalAreaNetwork.list >> ../Mine/Direct.list
         cat Telegram.list > ../Mine/Telegram.list
         cat Netflix.list > ../Mine/Netflix.list
         cat Apple.list > ../Mine/Apple.list
