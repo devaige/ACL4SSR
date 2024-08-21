@@ -1,0 +1,27 @@
+name: Sync Fork
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  sync-fork:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: master
+
+    - name: Set up Git
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Add upstream repository
+      run: |
+        git remote add upstream https://github.com/ACL4SSR/ACL4SSR.git
+        git fetch upstream
+        git merge upstream/master --allow-unrelated-histories
+        git push origin master
