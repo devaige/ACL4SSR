@@ -17,8 +17,12 @@ jobs:
 
     - name: Merge rules
       run: |
-        cat Clash/ChinaCompanyIp.list Clash/ChinaDomain.list Clash/ChinaIp.list Clash/ChinaIpV6.list Clash/ChinaMedia.list > Mine/Direct.list
+        cat Clash/ChinaCompanyIp.list Clash/ChinaDomain.list Clash/ChinaIp.list Clash/ChinaIpV6.list Clash/ChinaMedia.list Mine/Custom/Direct.list Clash/LocalAreaNetwork.list > Mine/Direct.list
+        cat Mine/Custom/Balance.list Clash/OneDrive.list > Mine/Balance.list
+        cat Clash/ProxyGFWlist.list Clash/ProxyLite.list Clash/ProxyMedia.list Mine/Custom/Fastest.list > Mine/Fastest.list
         cat Clash/BanAD.list Clash/BanEasyList.list Clash/BanEasyListChina.list Clash/BanEasyPrivacy.list Clash/BanProgramAD.list > Mine/Reject.list
+        cat Clash/GoogleCN.list Mine/Custom/Google.list > Mine/Google.list
+        cat Clash/Microsoft.list > Mine/Microsoft.list
 
     - name: Commit and Push changes
       run: |

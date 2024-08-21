@@ -1,0 +1,4 @@
+# 从 Clash/Unban.list 中分离出来的 Google 规则
+# Google
+DOMAIN,dl.google.com
+DOMAIN-SUFFIX,googletraveladservices.com
