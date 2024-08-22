@@ -1,0 +1,29 @@
+name: Update Rules
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Merge rules
+      run: |
+        cat Clash/ChinaCompanyIp.list Clash/ChinaDomain.list Clash/ChinaIp.list Clash/ChinaIpV6.list Clash/ChinaMedia.list > Mine/Direct.list
+        cat Clash/BanAD.list Clash/BanEasyList.list Clash/BanEasyListChina.list Clash/BanEasyPrivacy.list Clash/BanProgramAD.list > Mine/Reject.list
+
+    - name: Commit and Push changes
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git add Mine
+        git commit -m "Automated update of my custom rule list."
+        git push origin master
