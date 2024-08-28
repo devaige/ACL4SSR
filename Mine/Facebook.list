@@ -3,7 +3,8 @@
 DOMAIN-KEYWORD,instagram
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,instagr.am
-DOMAIN-SUFFIX,instagram.com# 内容：Facebook
+DOMAIN-SUFFIX,instagram.com
+# 内容：Facebook
 # 数量：21条
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn
@@ -25,7 +26,8 @@ IP-CIDR,157.240.0.0/17,no-resolve
 IP-CIDR,173.252.64.0/18,no-resolve
 IP-CIDR,179.60.192.0/22,no-resolve
 IP-CIDR,185.60.216.0/22,no-resolve
-IP-CIDR,204.15.20.0/22,no-resolve# 内容：Whatsapp
+IP-CIDR,204.15.20.0/22,no-resolve
+# 内容：Whatsapp
 # 数量：16条
 DOMAIN-KEYWORD,whatsapp
 IP-CIDR,18.194.0.0/15,no-resolve

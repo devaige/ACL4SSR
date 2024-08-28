@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,xboxlive.com
 DOMAIN-SUFFIX,xboxservice.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,gamepass.com
+
 # OneDrive
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
@@ -24,7 +25,8 @@ DOMAIN-SUFFIX,skydrive.wns.windows.com
 DOMAIN-SUFFIX,spoprod-a.akamaihd.net
 DOMAIN-SUFFIX,storage.live.com
 DOMAIN-SUFFIX,storage.msn.com
-#DOMAIN-SUFFIX,aria.microsoft.com# 内容：xbox
+#DOMAIN-SUFFIX,aria.microsoft.com
+# 内容：xbox
 # 数量：6条
 
 DOMAIN-SUFFIX,xbox.com
@@ -34,6 +36,7 @@ DOMAIN-SUFFIX,xboxlive.com
 DOMAIN-SUFFIX,xboxservice.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,gamepass.com
+
 # 内容：OneDrive
 # 数量：18条
 USER-AGENT,OneDrive*

@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,toolbarqueries.google.com
 DOMAIN-SUFFIX,tools.google.com
 DOMAIN-SUFFIX,tools.l.google.com
 DOMAIN-SUFFIX,www-googletagmanager.l.google.com
+
 # 内容：GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
 # 数量：18条
 IP-CIDR,120.232.181.162/32,no-resolve
@@ -47,7 +48,8 @@ IP-CIDR,203.208.43.0/24,no-resolve
 IP-CIDR,203.208.50.0/24,no-resolve
 IP-CIDR,220.181.174.162/32,no-resolve
 IP-CIDR,220.181.174.226/32,no-resolve
-IP-CIDR,220.181.174.34/32,no-resolve# 内容：Google
+IP-CIDR,220.181.174.34/32,no-resolve
+# 内容：Google
 # 数量：24条
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
@@ -72,7 +74,8 @@ DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 IP-CIDR,74.125.0.0/16,no-resolve
-IP-CIDR,173.194.0.0/16,no-resolve# 内容：GoogleCN
+IP-CIDR,173.194.0.0/16,no-resolve
+# 内容：GoogleCN
 # 数量：29条
 DOMAIN-SUFFIX,265.com
 DOMAIN-SUFFIX,2mdn.net
@@ -102,7 +105,8 @@ DOMAIN-SUFFIX,ssl-google-analytics.l.google.com
 DOMAIN-SUFFIX,toolbarqueries.google.com
 DOMAIN-SUFFIX,tools.google.com
 DOMAIN-SUFFIX,tools.l.google.com
-DOMAIN-SUFFIX,www-googletagmanager.l.google.com# 内容：GoogleFCM 谷歌推送服务
+DOMAIN-SUFFIX,www-googletagmanager.l.google.com
+# 内容：GoogleFCM 谷歌推送服务
 # 数量：35条
 DOMAIN,alt1-mtalk.google.com
 DOMAIN,alt2-mtalk.google.com
@@ -138,7 +142,8 @@ IP-CIDR,172.253.63.188/32,no-resolve
 IP-CIDR,172.253.122.188/32,no-resolve
 IP-CIDR,173.194.175.188/32,no-resolve
 IP-CIDR,173.194.218.188/32,no-resolve
-IP-CIDR,209.85.233.188/32,no-resolve# 内容：GoogleEarth 谷歌地球
+IP-CIDR,209.85.233.188/32,no-resolve
+# 内容：GoogleEarth 谷歌地球
 # 数量：16条
 DOMAIN-SUFFIX,earth-pa.clients6.google.com
 DOMAIN-SUFFIX,earth.google.com
@@ -155,6 +160,7 @@ DOMAIN-SUFFIX,khm3.google.com
 DOMAIN-SUFFIX,khm3.googleapis.com
 DOMAIN-SUFFIX,khmdb.google.com
 DOMAIN-SUFFIX,khmdb.googleapis.com
-DOMAIN-SUFFIX,mw1.google.com# 从 Clash/Unban.list 中分离出来的 Google 规则
+DOMAIN-SUFFIX,mw1.google.com
+# 从 Clash/Unban.list 中分离出来的 Google 规则
 DOMAIN,dl.google.com
 DOMAIN-SUFFIX,googletraveladservices.com

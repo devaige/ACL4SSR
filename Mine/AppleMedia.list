@@ -2,7 +2,8 @@
 # 数量：3条
 USER-AGENT,AppleNews*
 USER-AGENT,com.apple.news*
-DOMAIN,gspe1-ssl.ls.apple.com# 内容：AppleTV
+DOMAIN,gspe1-ssl.ls.apple.com
+# 内容：AppleTV
 # 数量：3条
 DOMAIN,np-edge.itunes.apple.com
 DOMAIN,play-edge.itunes.apple.com

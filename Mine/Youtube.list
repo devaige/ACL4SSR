@@ -4,7 +4,8 @@ USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
-DOMAIN,music.youtube.com# 内容：YouTube
+DOMAIN,music.youtube.com
+# 内容：YouTube
 # 数量：17条
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*

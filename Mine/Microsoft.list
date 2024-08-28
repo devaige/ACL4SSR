@@ -79,10 +79,12 @@ DOMAIN-SUFFIX,windowsazure.com
 DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,wunderlist.com
 DOMAIN-SUFFIX,yammer.com
-DOMAIN-SUFFIX,yammerusercontent.com# Bing
+DOMAIN-SUFFIX,yammerusercontent.com
+# Bing
 # From https://github.com/ACL4SSR/ACL4SSR/issues/121#issuecomment-1793673237
 DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,copilot.microsoft.com# 内容：Microsoft
+DOMAIN-SUFFIX,copilot.microsoft.com
+# 内容：Microsoft
 # 数量：79条
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,microsoft
@@ -162,7 +164,8 @@ DOMAIN-SUFFIX,windowsazure.com
 DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,wunderlist.com
 DOMAIN-SUFFIX,yammer.com
-DOMAIN-SUFFIX,yammerusercontent.com# 内容：Bing
+DOMAIN-SUFFIX,yammerusercontent.com
+# 内容：Bing
 # 数量：2条
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,copilot.microsoft.com

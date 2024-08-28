@@ -459,29 +459,35 @@ USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
-DOMAIN,music.youtube.com# 内容：KKBOX
+DOMAIN,music.youtube.com
+# 内容：KKBOX
 # 数量：3条
 DOMAIN-SUFFIX,kfs.io
 DOMAIN-SUFFIX,kkbox.com
-DOMAIN-SUFFIX,kkbox.com.tw# 内容：Epic
+DOMAIN-SUFFIX,kkbox.com.tw
+# 内容：Epic
 # 数量：5条
 DOMAIN-SUFFIX,epicgames.com
 DOMAIN-SUFFIX,epicgames.dev
 DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,paragon.com
-DOMAIN-SUFFIX,unrealengine.com# 内容：JOOX
+DOMAIN-SUFFIX,unrealengine.com
+# 内容：JOOX
 # 数量：4条
 USER-AGENT,JOOX*
 USER-AGENT,WeMusic*
 DOMAIN-KEYWORD,jooxweb-api
-DOMAIN-SUFFIX,joox.com# 内容：All4
+DOMAIN-SUFFIX,joox.com
+# 内容：All4
 # 数量：3条
 USER-AGENT,All4*
 DOMAIN-SUFFIX,c4assets.com
-DOMAIN-SUFFIX,channel4.com# 内容：Pandora
+DOMAIN-SUFFIX,channel4.com
+# 内容：Pandora
 # 数量：2条
 USER-AGENT,Pandora*
-DOMAIN-SUFFIX,pandora.com# F1 🏎
+DOMAIN-SUFFIX,pandora.com
+# F1 🏎
 
 DOMAIN-SUFFIX,f1.com
 DOMAIN-SUFFIX,formula1.com
@@ -575,6 +581,7 @@ DOMAIN-SUFFIX,f1lasvegasgrandprix.com
 
 # 🇨🇳 Chinese Grand Prix (contract agreed to 2025)
 # 
+
 # 内容：HBO_GO_HKG
 # 数量：20条
 USER-AGENT,HBO%20GO%20PROD*
@@ -596,7 +603,8 @@ DOMAIN,players.brightcove.net
 DOMAIN,s3-ap-southeast-1.amazonaws.com
 DOMAIN-SUFFIX,hboasia.com
 DOMAIN-SUFFIX,hbogoasia.com
-DOMAIN-SUFFIX,hbogoasia.hk# 内容：DAZN
+DOMAIN-SUFFIX,hbogoasia.hk
+# 内容：DAZN
 # 数量：12条
 USER-AGENT,DAZN*
 DOMAIN-KEYWORD,voddazn
@@ -609,7 +617,8 @@ DOMAIN-SUFFIX,dazndn.com
 DOMAIN-SUFFIX,dcblivedazn.akamaized.net
 DOMAIN-SUFFIX,indazn.com
 DOMAIN-SUFFIX,indaznlab.com
-DOMAIN-SUFFIX,sentry.io# 内容：Spotify
+DOMAIN-SUFFIX,sentry.io
+# 内容：Spotify
 # 数量：9条
 USER-AGENT,Spotify*
 DOMAIN-KEYWORD,-spotify-
@@ -619,7 +628,8 @@ DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spoti.fi
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spotifycdn.com
-DOMAIN-SUFFIX,spotifycdn.net# 内容：Olevod
+DOMAIN-SUFFIX,spotifycdn.net
+# 内容：Olevod
 # 数量：9条
 DOMAIN-KEYWORD,olevod
 DOMAIN-SUFFIX,haiwaikan.com
@@ -629,7 +639,8 @@ DOMAIN-SUFFIX,olelive.com
 DOMAIN-SUFFIX,olevod.com
 DOMAIN-SUFFIX,olevod.io
 DOMAIN-SUFFIX,olevod.tv
-DOMAIN-SUFFIX,olevodtv.com# 内容：ViuTV
+DOMAIN-SUFFIX,olevodtv.com
+# 内容：ViuTV
 # 数量：16条
 USER-AGENT,Viu*
 DOMAIN,api.viu.now.com
@@ -646,7 +657,8 @@ DOMAIN-SUFFIX,viu.now.com
 DOMAIN-SUFFIX,viu.tv
 PROCESS-NAME,com.viu.pad
 PROCESS-NAME,com.viu.phone
-PROCESS-NAME,com.vuclip.viu# 内容：Origin
+PROCESS-NAME,com.vuclip.viu
+# 内容：Origin
 # 数量：7条
 DOMAIN,cloudsync-prod.s3.amazonaws.com
 DOMAIN,eaasserts-a.akamaihd.net
@@ -654,7 +666,8 @@ DOMAIN,origin-a.akamaihd.net
 DOMAIN,originasserts.akamaized.net
 DOMAIN,rtm.tnt-ea.com
 DOMAIN-SUFFIX,ea.com
-DOMAIN-SUFFIX,origin.com# 内容：NivodTV
+DOMAIN-SUFFIX,origin.com
+# 内容：NivodTV
 # 数量：11条
 DOMAIN-KEYWORD,nivod
 DOMAIN-SUFFIX,biggggg.com
@@ -666,10 +679,12 @@ DOMAIN-SUFFIX,newpppp.com
 DOMAIN-SUFFIX,nivod.tv
 DOMAIN-SUFFIX,nivodi.tv
 DOMAIN-SUFFIX,nivodz.com
-DOMAIN-SUFFIX,vod360.net# 内容：Zoom
+DOMAIN-SUFFIX,vod360.net
+# 内容：Zoom
 # 数量：2条
 DOMAIN-SUFFIX,zoom.us
-DOMAIN-SUFFIX,zoomgov.com# 内容：Adobe
+DOMAIN-SUFFIX,zoomgov.com
+# 内容：Adobe
 # 数量：34条
 DOMAIN-KEYWORD,adobe
 DOMAIN,adbemdigitalmediarebootprod2.112.2o7.net
@@ -704,11 +719,13 @@ DOMAIN-SUFFIX,thawte.com
 DOMAIN-SUFFIX,typekit.com
 DOMAIN-SUFFIX,typekit.net
 DOMAIN-SUFFIX,verisign.com
-DOMAIN-SUFFIX,worldsecuresystems.com# 内容：DiscoveryPlus
+DOMAIN-SUFFIX,worldsecuresystems.com
+# 内容：DiscoveryPlus
 # 数量：3条
 DOMAIN-SUFFIX,disco-api.com
 DOMAIN-SUFFIX,discovery.com
-DOMAIN-SUFFIX,uplynk.com# 内容：GameDownload
+DOMAIN-SUFFIX,uplynk.com
+# 内容：GameDownload
 # 数量：20条
 DOMAIN,ssl-lvlt.cdn.ea.com
 DOMAIN,origin-a.akamaihd.net
@@ -730,6 +747,7 @@ DOMAIN,assets1.xboxlive.com
 DOMAIN,assets2.xboxlive.com 
 DOMAIN-SUFFIX,dyn.riotcdn.net
 DOMAIN-SUFFIX,cdn.ubi.com
+
 #内容：Nintendo
 #数量：15条
 DOMAIN-SUFFIX,nintendo-europe.com
@@ -747,6 +765,7 @@ DOMAIN-SUFFIX,nintendo.jp
 DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,nintendo.nl
 DOMAIN-SUFFIX,nintendowifi.net
+
 # 内容：Steam
 # 数量：18条
 DOMAIN,steambroadcast.akamaized.net
@@ -766,12 +785,14 @@ DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamstat.us
 DOMAIN-SUFFIX,steamstatic.com
 DOMAIN-SUFFIX,underlords.com
-DOMAIN-SUFFIX,valvesoftware.com# 内容：FoxNow
+DOMAIN-SUFFIX,valvesoftware.com
+# 内容：FoxNow
 # 数量：4条
 USER-AGENT,FOX%20NOW*
 DOMAIN-SUFFIX,fox.com
 DOMAIN-SUFFIX,foxdcg.com
-DOMAIN-SUFFIX,uplynk.com# 内容：MyTVSuper
+DOMAIN-SUFFIX,uplynk.com
+# 内容：MyTVSuper
 # 数量：7条
 USER-AGENT,mytv*
 DOMAIN-KEYWORD,nowtv100
@@ -779,9 +800,11 @@ DOMAIN-KEYWORD,rthklive
 DOMAIN,mytvsuperlimited.hb.omtrdc.net
 DOMAIN,mytvsuperlimited.sc.omtrdc.net
 DOMAIN-SUFFIX,mytvsuper.com
-DOMAIN-SUFFIX,tvb.com# 内容：Qobuz
+DOMAIN-SUFFIX,tvb.com
+# 内容：Qobuz
 # 数量：1条
-DOMAIN-SUFFIX,qobuz.com# 内容：Kakao Talk
+DOMAIN-SUFFIX,qobuz.com
+# 内容：Kakao Talk
 # 数量：9条
 DOMAIN-SUFFIX,kakao.co.kr
 DOMAIN-SUFFIX,kakao.com
@@ -791,32 +814,38 @@ IP-CIDR,27.0.236.0/22,no-resolve
 IP-CIDR,103.27.148.0/22,no-resolve
 IP-CIDR,103.246.56.0/22,no-resolve
 IP-CIDR,110.76.140.0/22,no-resolve
-IP-CIDR,113.61.104.0/22,no-resolve# 内容：My5
+IP-CIDR,113.61.104.0/22,no-resolve
+# 内容：My5
 # 数量：4条
 USER-AGENT,My5*
 DOMAIN,d349g9zuie06uo.cloudfront.net
 DOMAIN-SUFFIX,channel5.com
-DOMAIN-SUFFIX,my5.tv# 内容：Deezer
+DOMAIN-SUFFIX,my5.tv
+# 内容：Deezer
 # 数量：3条
 USER-AGENT,Deezer*
 DOMAIN-SUFFIX,deezer.com
-DOMAIN-SUFFIX,dzcdn.net# 内容：SoundCloud
+DOMAIN-SUFFIX,dzcdn.net
+# 内容：SoundCloud
 # 数量：4条
 USER-AGENT,SoundCloud*
 DOMAIN-SUFFIX,p-cdn.us
 DOMAIN-SUFFIX,sndcdn.com
-DOMAIN-SUFFIX,soundcloud.com# 内容：Discord
+DOMAIN-SUFFIX,soundcloud.com
+# 内容：Discord
 # 数量：6条
 DOMAIN-SUFFIX,discord.co
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,discord.gg
 DOMAIN-SUFFIX,discord.media
 DOMAIN-SUFFIX,discordapp.com
-DOMAIN-SUFFIX,discordapp.net# 内容：HWTV
+DOMAIN-SUFFIX,discordapp.net
+# 内容：HWTV
 # 数量：3条
 USER-AGENT,HWTVMobile*
 DOMAIN-SUFFIX,5itv.tv
-DOMAIN-SUFFIX,ocnttv.com# 内容：BBCiPlayer
+DOMAIN-SUFFIX,ocnttv.com
+# 内容：BBCiPlayer
 # 数量：15条
 USER-AGENT,BBCiPlayer*
 DOMAIN-KEYWORD,bbcfmt
@@ -832,7 +861,8 @@ DOMAIN-SUFFIX,bbc.net.uk
 DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net
 DOMAIN-SUFFIX,bbci.co
 DOMAIN-SUFFIX,bbci.co.uk
-DOMAIN-SUFFIX,bidi.net.uk# 内容：DisneyPlus
+DOMAIN-SUFFIX,bidi.net.uk
+# 内容：DisneyPlus
 # 数量：22条
 USER-AGENT,Disney*
 USER-AGENT,Disney+*
@@ -855,7 +885,8 @@ DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net
 DOMAIN-SUFFIX,disneystreaming.com
 DOMAIN-SUFFIX,dssott.com
 DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
-DOMAIN-SUFFIX,js-agent.newrelic.com# 内容：HBO
+DOMAIN-SUFFIX,js-agent.newrelic.com
+# 内容：HBO
 # 数量：7条
 USER-AGENT,HBO%20NOW*
 USER-AGENT,HBOMAX*
@@ -863,7 +894,8 @@ DOMAIN-SUFFIX,hbo.com
 DOMAIN-SUFFIX,hbogo.com
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbomaxcdn.com
-DOMAIN-SUFFIX,hbonow.com# 内容：Twitch
+DOMAIN-SUFFIX,hbonow.com
+# 内容：Twitch
 # 数量：7条
 DOMAIN-KEYWORD,ttvnw
 DOMAIN-SUFFIX,ext-twitch.tv
@@ -871,32 +903,38 @@ DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,twitch-ext.rootonline.de
 DOMAIN-SUFFIX,twitch.tv
-DOMAIN-SUFFIX,twitchcdn.net# 内容：ITV
+DOMAIN-SUFFIX,twitchcdn.net
+# 内容：ITV
 # 数量：4条
 USER-AGENT,ITV_Player*
 DOMAIN,itvpnpmobile-a.akamaihd.net
 DOMAIN-SUFFIX,itv.com
-DOMAIN-SUFFIX,itvstatic.com# 内容：BBC
+DOMAIN-SUFFIX,itvstatic.com
+# 内容：BBC
 # 数量：3条
 DOMAIN-KEYWORD,uk-live
 DOMAIN-SUFFIX,bbc.co
-DOMAIN-SUFFIX,bbc.com# 内容：TIDAL
+DOMAIN-SUFFIX,bbc.com
+# 内容：TIDAL
 # 数量：4条
 USER-AGENT,TIDAL*
 DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com
 DOMAIN-SUFFIX,tidal.com
-DOMAIN-SUFFIX,tidalhifi.com# 内容：EncoreTVB
+DOMAIN-SUFFIX,tidalhifi.com
+# 内容：EncoreTVB
 # 数量：6条
 USER-AGENT,encoreTVB*
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,content.jwplatform.com
 DOMAIN,edge.api.brightcove.com
 DOMAIN,videos-f.jwpsrv.com
-DOMAIN-SUFFIX,encoretvb.com# 内容：Blizzard
+DOMAIN-SUFFIX,encoretvb.com
+# 内容：Blizzard
 # 数量：3条
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,battlenet.com
-DOMAIN-SUFFIX,blizzard.com# 内容：Hulu
+DOMAIN-SUFFIX,blizzard.com
+# 内容：Hulu
 # 数量：7条
 DOMAIN-SUFFIX,cws-hulu.conviva.com
 DOMAIN-SUFFIX,hulu.com
@@ -904,10 +942,12 @@ DOMAIN-SUFFIX,hulu.hb.omtrdc.net
 DOMAIN-SUFFIX,hulu.sc.omtrdc.net
 DOMAIN-SUFFIX,huluad.com
 DOMAIN-SUFFIX,huluim.com
-DOMAIN-SUFFIX,hulustream.com# 内容：PBS
+DOMAIN-SUFFIX,hulustream.com
+# 内容：PBS
 # 数量：2条
 USER-AGENT,PBS*
-DOMAIN-SUFFIX,pbs.org# 内容：SteamCN
+DOMAIN-SUFFIX,pbs.org
+# 内容：SteamCN
 # 数量：16条
 DOMAIN,csgo.wmsj.cn
 DOMAIN,dl.steam.clngaa.com
@@ -924,10 +964,12 @@ DOMAIN,xz.pphimalayanrt.com
 DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,steamchina.com
 DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,steamusercontent.com# 内容：ABC
+DOMAIN-SUFFIX,steamusercontent.com
+# 内容：ABC
 # 数量：2条
 DOMAIN-SUFFIX,edgedatg.com
-DOMAIN-SUFFIX,go.com# 内容：E-Hentai Galleries
+DOMAIN-SUFFIX,go.com
+# 内容：E-Hentai Galleries
 # 数量：6条
 DOMAIN-SUFFIX,e-hentai.org
 DOMAIN-SUFFIX,ehwiki.org
@@ -935,6 +977,7 @@ DOMAIN-SUFFIX,ehgt.org
 DOMAIN-SUFFIX,exhentai.org
 DOMAIN-SUFFIX,hentaiverse.org
 DOMAIN-SUFFIX,hath.network
+
 # 从 Clash/Download.list 中分离出来的需要负载均衡的规则
 # Mac Download
 PROCESS-NAME,aria2c.exe

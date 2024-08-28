@@ -485,6 +485,7 @@ DOMAIN-SUFFIX,ocnttv.com
 # VikACG
 DOMAIN-SUFFIX,vikacg.com
 DOMAIN-SUFFIX,picjs.xyz
+
 # 代理列表
 
 # MyList && Other
@@ -6839,13 +6840,15 @@ DOMAIN-SUFFIX,ocnttv.com
 # VikACG
 DOMAIN-SUFFIX,vikacg.com
 DOMAIN-SUFFIX,picjs.xyz
+
 # 内容：Spark
 # 数量：5条
 DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,hockeyapp.net
 DOMAIN-SUFFIX,readdle.com
-DOMAIN-SUFFIX,smartmailcloud.com# 内容：Samsung
+DOMAIN-SUFFIX,smartmailcloud.com
+# 内容：Samsung
 # 数量：21条
 DOMAIN-KEYWORD,samsung
 DOMAIN-SUFFIX,aibixby.com.cn
@@ -6867,7 +6870,8 @@ DOMAIN-SUFFIX,srcgsre.com
 DOMAIN-SUFFIX,sreminder.cn
 DOMAIN-SUFFIX,stadmin.cn
 DOMAIN-SUFFIX,streleng.cn
-DOMAIN-SUFFIX,yogiio.cn# 内容：Amazon
+DOMAIN-SUFFIX,yogiio.cn
+# 内容：Amazon
 # 数量：41条
 DOMAIN-KEYWORD,avoddashs
 DOMAIN,atv-ps.amazon.com
@@ -6909,7 +6913,8 @@ IP-CIDR,54.93.0.0/16,no-resolve
 IP-CIDR,54.156.0.0/14,no-resolve
 IP-CIDR,54.226.0.0/15,no-resolve
 IP-CIDR,54.230.156.0/22,no-resolve
-URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/# 内容：AmazonIp
+URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
+# 内容：AmazonIp
 # 数量：1789条
 IP-CIDR,3.0.0.0/15,no-resolve
 IP-CIDR,3.2.0.0/22,no-resolve
@@ -8699,7 +8704,8 @@ IP-CIDR,216.39.136.0/21,no-resolve
 IP-CIDR,216.39.152.0/21,no-resolve
 IP-CIDR,216.39.160.0/20,no-resolve
 IP-CIDR,216.137.32.0/19,no-resolve
-IP-CIDR,216.182.224.0/20,no-resolve# 内容：Scholar 国内外学术网站
+IP-CIDR,216.182.224.0/20,no-resolve
+# 内容：Scholar 国内外学术网站
 # 数量：82条
 DOMAIN-SUFFIX,acm.org
 DOMAIN-SUFFIX,acs.org
@@ -8782,7 +8788,8 @@ DOMAIN-SUFFIX,westlawchina.com
 DOMAIN-SUFFIX,wiley.com
 DOMAIN-SUFFIX,worldbank.org
 DOMAIN-SUFFIX,worldscientific.com
-DOMAIN-SUFFIX,zotero.org# 内容：Top Blocked Sites
+DOMAIN-SUFFIX,zotero.org
+# 内容：Top Blocked Sites
 # 数量：109条
 DOMAIN-SUFFIX,4sqi.net
 DOMAIN-SUFFIX,a248.e.akamai.net
@@ -8892,7 +8899,8 @@ DOMAIN-SUFFIX,txmblr.com
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,vine.co
-DOMAIN-SUFFIX,vox-cdn.com# 从 Clash/UnBan.list 中分离出来的需要自动选择的规则
+DOMAIN-SUFFIX,vox-cdn.com
+# 从 Clash/UnBan.list 中分离出来的需要自动选择的规则
 # Epicgames
 DOMAIN-SUFFIX,ol.epicgames.com
 # Mozilla
