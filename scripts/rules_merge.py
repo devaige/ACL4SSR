@@ -157,7 +157,7 @@ for filepath in rules_list_file_paths:
         with open(filepath, "r", encoding="UTF-8") as f:
             content = f.read()
         with open(OUTPUT, "a", encoding="UTF-8") as f:
-            f.write(content)
+            f.write(content + "\n")
 
 # 自定义多行字符串常量规则
 rules = {
