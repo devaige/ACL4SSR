@@ -8892,4 +8892,17 @@ DOMAIN-SUFFIX,txmblr.com
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,vine.co
-DOMAIN-SUFFIX,vox-cdn.com
+DOMAIN-SUFFIX,vox-cdn.com# 从 Clash/UnBan.list 中分离出来的需要自动选择的规则
+# Epicgames
+DOMAIN-SUFFIX,ol.epicgames.com
+# Mozilla
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
+# Origin
+DOMAIN,origin-a.akamaihd.net
+# General
+DOMAIN,app.adjust.com
+# Hypixel Network
+DOMAIN,rewards.hypixel.net
+# Koodo Mobile
+DOMAIN-SUFFIX,koodomobile.com
+DOMAIN-SUFFIX,koodomobile.ca

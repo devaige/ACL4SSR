@@ -155,4 +155,6 @@ DOMAIN-SUFFIX,khm3.google.com
 DOMAIN-SUFFIX,khm3.googleapis.com
 DOMAIN-SUFFIX,khmdb.google.com
 DOMAIN-SUFFIX,khmdb.googleapis.com
-DOMAIN-SUFFIX,mw1.google.com
+DOMAIN-SUFFIX,mw1.google.com# 从 Clash/Unban.list 中分离出来的 Google 规则
+DOMAIN,dl.google.com
+DOMAIN-SUFFIX,googletraveladservices.com
