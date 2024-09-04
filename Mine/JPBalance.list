@@ -1,17 +1,7 @@
-# 内容：HuluJapan
-# 数量：6条
-DOMAIN-SUFFIX,happyon.jp
-DOMAIN-SUFFIX,hjholdings.jp
-DOMAIN-SUFFIX,hulu.jp
-DOMAIN-SUFFIX,prod.hjholdings.tv
-DOMAIN-SUFFIX,streaks.jp
-DOMAIN-SUFFIX,yb.uncn.jp
-# 内容：Niconico
-# 数量：4条
-USER-AGENT,Niconico*
-DOMAIN-SUFFIX,dmc.nico
-DOMAIN-SUFFIX,nicovideo.jp
-DOMAIN-SUFFIX,nimg.jp
+# 内容：Dubox
+# 数量：2条
+DOMAIN-SUFFIX,dubox.com
+DOMAIN-SUFFIX,duboxcdn.com
 # 内容：AbemaTV
 # 数量：6条
 USER-AGENT,AbemaTV*
@@ -20,6 +10,17 @@ DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,abema.tv
 DOMAIN-SUFFIX,ameba.jp
 DOMAIN-SUFFIX,hayabusa.io
+# 内容：Niconico
+# 数量：4条
+USER-AGENT,Niconico*
+DOMAIN-SUFFIX,dmc.nico
+DOMAIN-SUFFIX,nicovideo.jp
+DOMAIN-SUFFIX,nimg.jp
+# 内容：Pixiv
+# 数量：3条
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net
 # 内容：Japonx
 # 数量：10条
 DOMAIN-KEYWORD,japonx
@@ -32,16 +33,24 @@ DOMAIN-SUFFIX,japronx.com
 DOMAIN-SUFFIX,japronx.net
 DOMAIN-SUFFIX,japronx.tv
 DOMAIN-SUFFIX,japronx.vip
-# 内容：Dubox
+# 内容：TeraBox
 # 数量：2条
-DOMAIN-SUFFIX,dubox.com
-DOMAIN-SUFFIX,duboxcdn.com
+DOMAIN-SUFFIX,terabox.com
+DOMAIN-SUFFIX,teraboxcdn.com
 # 内容：Pornhub
 # 数量：4条
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,phprcdn.com
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
+# 内容：HuluJapan
+# 数量：6条
+DOMAIN-SUFFIX,happyon.jp
+DOMAIN-SUFFIX,hjholdings.jp
+DOMAIN-SUFFIX,hulu.jp
+DOMAIN-SUFFIX,prod.hjholdings.tv
+DOMAIN-SUFFIX,streaks.jp
+DOMAIN-SUFFIX,yb.uncn.jp
 # 内容：Porn
 # 数量：23条
 DOMAIN-KEYWORD,porn
@@ -67,12 +76,3 @@ DOMAIN-SUFFIX,xnxx.com
 DOMAIN-SUFFIX,xvideos-cdn.com
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,ypncdn.com
-# 内容：Pixiv
-# 数量：3条
-DOMAIN-SUFFIX,fanbox.cc
-DOMAIN-SUFFIX,pixiv.net
-DOMAIN-SUFFIX,pximg.net
-# 内容：TeraBox
-# 数量：2条
-DOMAIN-SUFFIX,terabox.com
-DOMAIN-SUFFIX,teraboxcdn.com

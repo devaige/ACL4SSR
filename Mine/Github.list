@@ -1,11 +1,3 @@
-# 内容：Github
-# 数量：6条
-DOMAIN-KEYWORD,github
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubusercontent.com
 # 内容：Developer 开发者常用国外网站、镜像和论坛
 # 数量：20条
 DOMAIN-SUFFIX,apache.org
@@ -28,3 +20,11 @@ DOMAIN-SUFFIX,sourcegraph.com
 DOMAIN-SUFFIX,spring.io
 DOMAIN-SUFFIX,spring.net
 DOMAIN-SUFFIX,stackoverflow.com
+# 内容：Github
+# 数量：6条
+DOMAIN-KEYWORD,github
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
