@@ -1,0 +1,4 @@
+# 自定义的 perplexity 规则
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,perplexity.com
