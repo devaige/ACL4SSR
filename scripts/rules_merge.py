@@ -164,9 +164,8 @@ for filepath in rules_list_file_paths:
 rules = {
     F_NAME_PERPLEXITY: [
         "# 自定义的 perplexity 规则",
-        "DOMAIN-SUFFIX,perplexity.ai",
+        "DOMAIN-KEYWORD,perplexity",
         "DOMAIN-SUFFIX,pplx.ai",
-        "DOMAIN-SUFFIX,perplexity.com",
     ],
     F_NAME_GOOGLE: [
         "# 从 Clash/Unban.list 中分离出来的 Google 规则",
