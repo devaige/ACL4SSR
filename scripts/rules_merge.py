@@ -15,6 +15,7 @@ os.makedirs(d_mine_tmp, exist_ok=True)
 # 定义输出文件名
 F_NAME_OPEN_AI = "OpenAI.list"
 F_NAME_CLAUDE = "Claude.list"
+F_NAME_PERPLEXITY = "Perplexity.list"
 F_NAME_TELEGRAM = "Telegram.list"
 F_NAME_TWITTER = "Twitter.list"
 F_NAME_YOUTUBE = "Youtube.list"
@@ -130,8 +131,8 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_JP_BALANCE)
     elif filename in ("VikACG.list", "Wikipedia.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_SG_FASTEST)
-    elif filename in ("AbemaTV.list"):
-        OUTPUT = os.path.join(d_mine_tmp, F_NAME_SG_BALANCE)
+    # elif filename in (""):
+    #     OUTPUT = os.path.join(d_mine_tmp, F_NAME_SG_BALANCE)
     # elif filename in ("", ""):
     #     OUTPUT = os.path.join(d_mine_tmp, F_NAME_TW_FASTEST)
     elif filename in ("Bahamut.list", "BilibiliHMT.list", "IqiyiHMT.list", "KKTV.list", "TaiWanGood.list"):
@@ -161,6 +162,12 @@ for filepath in rules_list_file_paths:
 
 # 自定义多行字符串常量规则
 rules = {
+    F_NAME_PERPLEXITY: [
+        "# 自定义的 perplexity 规则",
+        "DOMAIN-SUFFIX,perplexity.ai",
+        "DOMAIN-SUFFIX,pplx.ai",
+        "DOMAIN-SUFFIX,perplexity.com",
+    ],
     F_NAME_GOOGLE: [
         "# 从 Clash/Unban.list 中分离出来的 Google 规则",
         "DOMAIN,dl.google.com",
