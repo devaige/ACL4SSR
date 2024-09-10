@@ -15,10 +15,6 @@ DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sentry.io
-<<<<<<< HEAD
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,ai.com
-=======
 DOMAIN-SUFFIX,stripe.com
->>>>>>> 6953725 (ADD:完善ruleset)
-
