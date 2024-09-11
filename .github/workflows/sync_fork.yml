@@ -25,7 +25,7 @@ jobs:
 
     - name: Add upstream repository
       run: |
-        git fetch -all
+        git fetch --all
         git rebase origin/master
         git remote add upstream https://github.com/ACL4SSR/ACL4SSR.git
         git fetch upstream
