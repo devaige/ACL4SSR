@@ -1,3 +1,10 @@
+# 内容：YouTubeMusic
+# 数量：5条
+USER-AGENT,*YouTubeMusic*
+USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,YouTubeMusic*
+USER-AGENT,com.google.ios.youtubemusic*
+DOMAIN,music.youtube.com
 # 内容：YouTube
 # 数量：17条
 USER-AGENT,*youtube*
@@ -17,10 +24,3 @@ DOMAIN-SUFFIX,youtubegaming.com
 DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
-# 内容：YouTubeMusic
-# 数量：5条
-USER-AGENT,*YouTubeMusic*
-USER-AGENT,*com.google.ios.youtubemusic*
-USER-AGENT,YouTubeMusic*
-USER-AGENT,com.google.ios.youtubemusic*
-DOMAIN,music.youtube.com
