@@ -123,7 +123,7 @@ for filepath in rules_list_file_paths:
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_MICROSOFT_MEDIA)
     elif filename in ("ProxyGFWlist.list", "ProxyLite.list", "Amazon.list", "AmazonIp.list", "Samsung.list", "Scholar.list", "Spark.list", "TopBlockedSites.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_HK_FASTEST)
-    elif filename in ("ProxyMedia.list", "ABC.list", "Adobe.list", "All4.list", "BBC.list", "BBCiPlayer.list", "Blizzard.list", "DAZN.list", "Deezer.list", "Discord.list", "DiscoveryPlus.list", "DisneyPlus.list", "EHGallery.list", "EncoreTVB.list", "Epic.list", "F1.list", "FoxNow.list", "GameDownload.list", "HBO_GO_HKG.list", "HBO.list", "Hulu.list", "HWTV.list", "ITV.list", "JOOX.list", "KakaoTalk.list", "KKBOX.list", "My5.list", "MyTVSuper.list", "Nintendo.list", "NivodTV.list", "Olevod.list", "Origin.list", "Pandora.list", "PBS.list", "Qobuz.list", "SoundCloud.list", "Spotify.list", "Steam.list", "SteamCN.list", "TIDAL.list", "Twitch.list", "ViuTV.list", "Zoom.list"):
+    elif filename in ("ProxyMedia.list", "ABC.list", "Adobe.list", "All4.list", "BBC.list", "BBCiPlayer.list", "Blizzard.list", "DAZN.list", "Deezer.list", "Discord.list", "DiscoveryPlus.list", "DisneyPlus.list", "EHGallery.list", "EncoreTVB.list", "Epic.list", "F1.list", "FoxNow.list", "GameDownload.list", "HBO_GO_HKG.list", "HBO.list", "Hulu.list", "HWTV.list", "ITV.list", "JOOX.list", "KakaoTalk.list", "KKBOX.list", "My5.list", "MyTVSuper.list", "Nintendo.list", "NivodTV.list", "Olevod.list", "Origin.list", "Pandora.list", "PBS.list", "Qobuz.list", "SoundCloud.list", "Spotify.list", "Steam.list", "SteamCN.list", "TIDAL.list", "Twitch.list", "ViuTV.list", "Zoom.list", "JetBrains.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_HK_BALANCE)
     elif filename in ("Dmm.list", "Sony.list"):
         OUTPUT = os.path.join(d_mine_tmp, F_NAME_JP_FASTEST)
@@ -188,8 +188,6 @@ rules = {
         "DOMAIN-SUFFIX,smtp",
         "DOMAIN-KEYWORD,aria2",
         "URL-REGEX,(Subject|HELO|SMTP)",
-        "# Jetbrain",
-        "DOMAIN-SUFFIX,intellij.net",
     ],
     F_NAME_HK_FASTEST: [
         "# 从 Clash/UnBan.list 中分离出来的需要自动选择的规则",
