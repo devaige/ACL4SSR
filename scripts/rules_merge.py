@@ -188,6 +188,8 @@ rules = {
         "DOMAIN-SUFFIX,smtp",
         "DOMAIN-KEYWORD,aria2",
         "URL-REGEX,(Subject|HELO|SMTP)",
+        "# Jetbrain",
+        "DOMAIN-SUFFIX,intellij.net",
     ],
     F_NAME_HK_FASTEST: [
         "# 从 Clash/UnBan.list 中分离出来的需要自动选择的规则",
