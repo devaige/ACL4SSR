@@ -10423,22 +10423,6 @@ DOMAIN-SUFFIX,iflytek.com
 # 数量：2条
 DOMAIN-SUFFIX,pplive.com
 DOMAIN-SUFFIX,pptv.com
-# > JetBrains 
-DOMAIN-SUFFIX,intellij.com
-DOMAIN-SUFFIX,intellij.net
-DOMAIN-SUFFIX,intellij.org
-DOMAIN-SUFFIX,jetbrains.org
-DOMAIN-SUFFIX,jetbrains.com
-DOMAIN-SUFFIX,jetbrains.net
-DOMAIN-SUFFIX,jetbrains.space
-DOMAIN-SUFFIX,jetbrains.team
-DOMAIN-SUFFIX,datalore.io
-DOMAIN-SUFFIX,kotlinlang.org
-DOMAIN-SUFFIX,kotlinconf.com
-
-# > JetBrains AI
-DOMAIN-SUFFIX,grazie.ai
-DOMAIN-SUFFIX,grazie.aws.intellij.net
 # 内容：Sina
 # 数量：14条
 DOMAIN-SUFFIX,leju.com

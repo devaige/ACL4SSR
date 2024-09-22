@@ -616,6 +616,22 @@ DOMAIN-SUFFIX,steamstat.us
 DOMAIN-SUFFIX,steamstatic.com
 DOMAIN-SUFFIX,underlords.com
 DOMAIN-SUFFIX,valvesoftware.com
+# > JetBrains 
+DOMAIN-SUFFIX,intellij.com
+DOMAIN-SUFFIX,intellij.net
+DOMAIN-SUFFIX,intellij.org
+DOMAIN-SUFFIX,jetbrains.org
+DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,jetbrains.net
+DOMAIN-SUFFIX,jetbrains.space
+DOMAIN-SUFFIX,jetbrains.team
+DOMAIN-SUFFIX,datalore.io
+DOMAIN-SUFFIX,kotlinlang.org
+DOMAIN-SUFFIX,kotlinconf.com
+
+# > JetBrains AI
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
 # 内容：FoxNow
 # 数量：4条
 USER-AGENT,FOX%20NOW*
@@ -995,5 +1011,3 @@ PROCESS-NAME,qbittorrent.exe
 DOMAIN-SUFFIX,smtp
 DOMAIN-KEYWORD,aria2
 URL-REGEX,(Subject|HELO|SMTP)
-# Jetbrain
-DOMAIN-SUFFIX,intellij.net
