@@ -995,3 +995,5 @@ PROCESS-NAME,qbittorrent.exe
 DOMAIN-SUFFIX,smtp
 DOMAIN-KEYWORD,aria2
 URL-REGEX,(Subject|HELO|SMTP)
+# Jetbrain
+DOMAIN-SUFFIX,intellij.net
