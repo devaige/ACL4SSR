@@ -205,6 +205,10 @@ rules = {
         "DOMAIN-SUFFIX,koodomobile.com",
         "DOMAIN-SUFFIX,koodomobile.ca",
     ],
+    F_NAME_JP_FASTEST: [
+        "# 品葱 HK 无法访问",
+        "DOMAIN-SUFFIX,pincong.rocks",
+    ],
     F_NAME_DIRECT: [
         "# 从 Clash/Download.list 中分离出来的需要直连的规则",
         "# Mac Download",
