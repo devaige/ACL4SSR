@@ -21,3 +21,5 @@ DOMAIN-SUFFIX,playstation.net
 DOMAIN-SUFFIX,playstationnetwork.com
 DOMAIN-SUFFIX,sony.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+# 品葱 HK 无法访问
+DOMAIN-SUFFIX,pincong.rocks
