@@ -32,6 +32,7 @@ F_NAME_APPLE_MEDIA = "AppleMedia.list"
 F_NAME_FACEBOOK = "Facebook.list"
 F_NAME_MICROSOFT = "Microsoft.list"
 F_NAME_MICROSOFT_MEDIA = "MicrosoftMedia.list"
+F_NAME_PC = "PC.list"
 F_NAME_HK_FASTEST = "HKFastest.list"
 F_NAME_HK_BALANCE = "HKBalance.list"
 F_NAME_JP_FASTEST = "JPFastest.list"
@@ -61,6 +62,7 @@ rules_file_names = {
     F_NAME_APPLE_MEDIA,  # Apple 媒体或存储相关的使用负载均衡节点
     F_NAME_FACEBOOK,
     F_NAME_MICROSOFT,
+    F_NAME_PC,# 品葱
     F_NAME_HK_FASTEST,
     F_NAME_HK_BALANCE,
     F_NAME_JP_FASTEST,
@@ -205,8 +207,8 @@ rules = {
         "DOMAIN-SUFFIX,koodomobile.com",
         "DOMAIN-SUFFIX,koodomobile.ca",
     ],
-    F_NAME_JP_FASTEST: [
-        "# 品葱 HK 无法访问",
+    F_NAME_PC: [
+        "# 品葱部分机场节点无法访问",
         "DOMAIN-SUFFIX,pincong.rocks",
     ],
     F_NAME_DIRECT: [
