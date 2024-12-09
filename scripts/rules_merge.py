@@ -206,6 +206,8 @@ rules = {
         "# Koodo Mobile",
         "DOMAIN-SUFFIX,koodomobile.com",
         "DOMAIN-SUFFIX,koodomobile.ca",
+        "# EA",
+        "DOMAIN-SUFFIX,ea.com",
     ],
     F_NAME_PC: [
         "# 品葱部分机场节点无法访问",
@@ -244,6 +246,8 @@ rules = {
         "DOMAIN,tracking.miui.com",
         "# General",
         "DOMAIN,bdtj.tagtic.cn",
+        "# 九吨科技",
+        "DOMAIN-SUFFIX,nineton.cn",
     ],
 }
 
