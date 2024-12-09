@@ -8462,3 +8462,5 @@ DOMAIN,rewards.hypixel.net
 # Koodo Mobile
 DOMAIN-SUFFIX,koodomobile.com
 DOMAIN-SUFFIX,koodomobile.ca
+# EA
+DOMAIN-SUFFIX,ea.com
