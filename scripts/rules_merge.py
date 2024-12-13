@@ -15,6 +15,7 @@ os.makedirs(d_mine_tmp, exist_ok=True)
 # 定义输出文件名
 F_NAME_OPEN_AI = "OpenAI.list"
 F_NAME_CLAUDE = "Claude.list"
+F_NAME_GEMINI = "Gemini.list"
 F_NAME_PERPLEXITY = "Perplexity.list"
 F_NAME_TELEGRAM = "Telegram.list"
 F_NAME_TWITTER = "Twitter.list"
@@ -47,6 +48,7 @@ F_NAME_DIRECT = "Direct.list"
 rules_file_names = {
     F_NAME_OPEN_AI,
     F_NAME_CLAUDE,
+    F_NAME_GEMINI,
     F_NAME_TELEGRAM,
     F_NAME_TWITTER,
     F_NAME_YOUTUBE,
